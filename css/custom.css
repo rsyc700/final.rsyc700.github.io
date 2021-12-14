@@ -64,6 +64,8 @@ p{
 }
 .nav-link:hover{
   background-color: green;
+  text-decoration: none;
+  border-radius: 0.3rem;
 }
 .dropdown-menu:active{
   margin-top: 0;
@@ -202,20 +204,39 @@ h4{
   font-family: 'Cinzel', serif;
   font-weight: bolder;
 }
+
+/*full product page*/
+.page-link:hover{
+    text-decoration: none;
+}
+.btn-danger{
+  margin-top: 0.2rem;
+}
+.page-btn{
+  margin-bottom:-16px;
+}
+.price-tag{
+  color: black;
+  font-size: 25px;
+  margin-top: -20px;
+  text-align: center;
+}
+#add-product {
+
+}
+
+/* individual product page */
 #detail-text {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 16px 0 rgba(167, 167, 167, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
+  border-radius: 0px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  height: 620px;
+  height: 624px;
 }
-
-/* individual product page */
- .btn-color {
+ .color-btn {
    border-color: black;
-   margin-left: 2rem;
  }
  #product-title {
    padding: 2rem;
@@ -223,13 +244,46 @@ h4{
  }
  #price-txt {
    font-size: 30px;
-   margin-top: -5rem;
-   padding-left: 2rem;
+   margin-top: -4.5rem;
+   padding: 0;
+   margin-left: 2rem;
  }
-/*#wishlist {
+.checked{
+  color:orange;
+}
+.unchecked{
+  color:black;
+}
+.rating{
   margin-top: -1rem;
-}*/
-
+  margin-bottom: 1rem;
+}
+#star-txt{
+  padding:0;
+  margin-top:-24px;
+  font-size: 25px;
+}
+#detail-break{
+  margin-top: -0.5rem;
+}
+.btn-add-cart{
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+.btn-add-cart:hover{
+  color: #00E900;
+  border-color: #00E900;
+}
+.btn-buy-now{
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+.btn-buy-now:hover{
+  color: #00E900;
+  border-color: #00E900;
+}
 @media screen and (max-width: 767px) {
   .nav-item-cart {display:inherit; position:absolute; right:14%; top:-25px; padding: .25em;}
   .navbar-toggler {display:inherit; position:relative; right:4%; padding: .25em;}
@@ -240,7 +294,8 @@ h4{
   #off-center{transform:translate(0%, 2%);}
   .couch-txt{transform: translate(-10%, -10%);}
   #centered-card{transform:translate(-26%, 2%); width: 363.2px;}
-  
+  #product-title{font-size:30px; text-align: center; padding:0.5rem;}
+
 
 }
 /*@media screen and (min-width: 768px) {
